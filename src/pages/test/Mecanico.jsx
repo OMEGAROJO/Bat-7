@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Card, CardHeader, CardBody, CardFooter } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
 import { toast } from 'react-toastify';
+import { getTestImagePath } from '../../utils/assetPaths';
 
 const Mecanico = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const Mecanico = () => {
       id: 1,
       question: "¿Qué tipo de polea podrá subir MÁS peso sin vencerse?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico1.png",
+      image: getTestImagePath('mecanico', 'mecanico1.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 0 // A
     },
@@ -26,7 +27,7 @@ const Mecanico = () => {
       id: 2,
       question: "¿Qué estante es MENOS resistente?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico2.png",
+      image: getTestImagePath('mecanico', 'mecanico2.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -34,7 +35,7 @@ const Mecanico = () => {
       id: 3,
       question: "¿Qué tipo de listones permite mover la carga con MENOS esfuerzo?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico3.png",
+      image: getTestImagePath('mecanico', 'mecanico3.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 0 // A
     },
@@ -42,7 +43,7 @@ const Mecanico = () => {
       id: 4,
       question: "Si el viento sopla en la dirección indicada, ¿hacia dónde tendríamos que golpear la bola para acercarla MÁS al hoyo?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico4.png",
+      image: getTestImagePath('mecanico', 'mecanico4.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 1 // B
     },
@@ -50,7 +51,7 @@ const Mecanico = () => {
       id: 5,
       question: "¿En qué zona (A, B o C) es MÁS probable que se rompan las cuerdas al colocar la carga?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico5.png",
+      image: getTestImagePath('mecanico', 'mecanico5.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 1 // B
     },
@@ -58,7 +59,7 @@ const Mecanico = () => {
       id: 6,
       question: "¿De qué recipiente saldrá el líquido con MÁS fuerza?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico6.png",
+      image: getTestImagePath('mecanico', 'mecanico6.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -66,7 +67,7 @@ const Mecanico = () => {
       id: 7,
       question: "¿Cuál de estos tres recipientes llenos de agua pesa MENOS?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico7.png",
+      image: getTestImagePath('mecanico', 'mecanico7.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 3 // D
     },
@@ -74,7 +75,7 @@ const Mecanico = () => {
       id: 8,
       question: "¿Qué torno deberá dar MÁS vueltas para enrollar los mismos metros de cuerda?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico8.png",
+      image: getTestImagePath('mecanico', 'mecanico8.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 3 // D
     },
@@ -82,7 +83,7 @@ const Mecanico = () => {
       id: 9,
       question: "¿Hacia qué dirección (A, B, C o D) está soplando el viento?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico9.png",
+      image: getTestImagePath('mecanico', 'mecanico9.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 1 // B
     },
@@ -90,7 +91,7 @@ const Mecanico = () => {
       id: 10,
       question: "¿Cuál de estos tres tejados es MÁS probable que se rompa en caso de nevada?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico10.png",
+      image: getTestImagePath('mecanico', 'mecanico10.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 0 // A
     },
@@ -98,7 +99,7 @@ const Mecanico = () => {
       id: 11,
       question: "¿A cuál de estas personas le costará MÁS esfuerzo trasladar la carga?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico11.png",
+      image: getTestImagePath('mecanico', 'mecanico11.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -106,7 +107,7 @@ const Mecanico = () => {
       id: 12,
       question: "¿Con qué bomba se inflará MÁS lentamente un colchón flotador?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico12.png",
+      image: getTestImagePath('mecanico', 'mecanico12.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -114,7 +115,7 @@ const Mecanico = () => {
       id: 13,
       question: "¿En qué caso se debe ejercer MENOS fuerza en el punto indicado por la flecha para sujetar el mismo peso?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico13.png",
+      image: getTestImagePath('mecanico', 'mecanico13.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 0 // A
     },
@@ -122,7 +123,7 @@ const Mecanico = () => {
       id: 14,
       question: "Si al frenar la bicicleta solo se usan los frenos delanteros, ¿hacia qué dirección será impulsado el ciclista?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico14.png",
+      image: getTestImagePath('mecanico', 'mecanico14.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 3 // D
     },
@@ -130,7 +131,7 @@ const Mecanico = () => {
       id: 15,
       question: "¿Cuál de estos tres pesos (A, B o C) pesa MENOS?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico15.png",
+      image: getTestImagePath('mecanico', 'mecanico15.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 3 // D
     },
@@ -138,7 +139,7 @@ const Mecanico = () => {
       id: 16,
       question: "¿Qué columna será MÁS resistente en caso de terremoto?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico16.png",
+      image: getTestImagePath('mecanico', 'mecanico16.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 1 // B
     },
@@ -146,7 +147,7 @@ const Mecanico = () => {
       id: 17,
       question: "¿Qué micrófono tiene MENOS probabilidad de caerse ante un golpe?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico17.png",
+      image: getTestImagePath('mecanico', 'mecanico17.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 0 // A
     },
@@ -154,7 +155,7 @@ const Mecanico = () => {
       id: 18,
       question: "¿Qué trayectoria (A, B o C) debe seguir el nadador para cruzar el río con MENOS esfuerzo?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico18.png",
+      image: getTestImagePath('mecanico', 'mecanico18.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 1 // B
     },
@@ -162,7 +163,7 @@ const Mecanico = () => {
       id: 19,
       question: "¿En qué punto es necesario ejercer MÁS fuerza para cerrar la puerta?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico19.png",
+      image: getTestImagePath('mecanico', 'mecanico19.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 0 // A
     },
@@ -170,7 +171,7 @@ const Mecanico = () => {
       id: 20,
       question: "¿En qué caso habrá que ejercer MENOS fuerza para levantar las ruedas delanteras del carro?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico20.png",
+      image: getTestImagePath('mecanico', 'mecanico20.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -178,7 +179,7 @@ const Mecanico = () => {
       id: 21,
       question: "¿Qué coche ofrece MENOS resistencia al aire?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico21.png",
+      image: getTestImagePath('mecanico', 'mecanico21.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -186,7 +187,7 @@ const Mecanico = () => {
       id: 22,
       question: "¿Cómo debe agarrarse la persona a la roca para que no la arrastre la corriente?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico22.png",
+      image: getTestImagePath('mecanico', 'mecanico22.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -194,7 +195,7 @@ const Mecanico = () => {
       id: 23,
       question: "Si tenemos estas tres linternas, ¿cuál iluminará un área MAYOR?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico23.png",
+      image: getTestImagePath('mecanico', 'mecanico23.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -202,7 +203,7 @@ const Mecanico = () => {
       id: 24,
       question: "¿Qué coche es MENOS probable que vuelque?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico24.png",
+      image: getTestImagePath('mecanico', 'mecanico24.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -210,7 +211,7 @@ const Mecanico = () => {
       id: 25,
       question: "¿En qué punto alcanzará MÁS velocidad el paracaidista?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico25.png",
+      image: getTestImagePath('mecanico', 'mecanico25.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -218,7 +219,7 @@ const Mecanico = () => {
       id: 26,
       question: "Si dejáramos tan solo UNO de los bloques (A, B, C o D), ¿con cuál se mantendría la estructura en equilibrio?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico26.png",
+      image: getTestImagePath('mecanico', 'mecanico26.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     },
@@ -226,7 +227,7 @@ const Mecanico = () => {
       id: 27,
       question: "¿Hacia qué zona de la cápsula será impulsado el astronauta cuando la máquina gire en el sentido indicado por la flecha?",
       subtitle: "",
-      image: "/assets/images/mecanico/mecanico27.png",
+      image: getTestImagePath('mecanico', 'mecanico27.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 1 // B
     },
@@ -234,7 +235,7 @@ const Mecanico = () => {
       id: 28,
       question: "Si colgamos el peso de esta forma, ¿por cuál de los puntos (A, B o C) es MENOS probable que se rompa la madera?",
       subtitle: "(Si no hay diferencia, marca D).",
-      image: "/assets/images/mecanico/mecanico28.png",
+      image: getTestImagePath('mecanico', 'mecanico28.png'),
       options: ["A", "B", "C", "D"],
       correctAnswer: 2 // C
     }
@@ -380,7 +381,7 @@ const Mecanico = () => {
                 <div className="bg-white border border-gray-300 rounded p-4 mb-3">
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-3 text-center">
                     <img
-                      src="/assets/images/mecanico/m1.png"
+                      src={getTestImagePath('mecanico', 'm1.png')}
                       alt="Ejemplo M1 - Bandeja en equilibrio"
                       className="max-w-full h-auto mx-auto"
                       style={{ maxHeight: '300px' }}
@@ -416,7 +417,7 @@ const Mecanico = () => {
                 <div className="bg-white border border-gray-300 rounded p-4 mb-3">
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-3 text-center">
                     <img
-                      src="/assets/images/mecanico/m2.png"
+                      src={getTestImagePath('mecanico', 'm2.png')}
                       alt="Ejemplo M2 - Tres vehículos a 70 km/h"
                       className="max-w-full h-auto mx-auto"
                       style={{ maxHeight: '300px' }}
