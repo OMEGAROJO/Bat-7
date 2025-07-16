@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  // Configuración base para GitHub Pages
-  base: '/Bat-7/',
+export default defineConfig(({ command, mode }) => ({
+  // Configuración base condicional: solo para producción en GitHub Pages
+  base: command === 'build' ? '/Bat-7/' : '/',
   plugins: [react()],
 
   // Optimizaciones de build
@@ -111,4 +111,4 @@ export default defineConfig({
     include: /src\/.*\.[tj]sx?$/,
     exclude: [],
   },
-});
+}));
