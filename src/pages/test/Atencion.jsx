@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Card, CardHeader, CardBody, CardFooter } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
 import { toast } from 'react-toastify';
+import { getTestImagePath } from '../../utils/assetPaths';
 import TestResultsService from '../../services/testResultsService';
 
 const Atencion = () => {
@@ -51,7 +52,7 @@ const Atencion = () => {
         const atencionQuestions = Array.from({ length: 80 }, (_, i) => ({
           id: i + 1,
           type: 'attention',
-          imageUrl: `/assets/images/atencion/Atencion${i + 1}.png`,
+          imageUrl: getTestImagePath('atencion', `Atencion${i + 1}.png`),
           options: [
             { id: '0', text: '0 veces' },
             { id: '1', text: '1 vez' },
@@ -257,7 +258,7 @@ const Atencion = () => {
                 <div className="mb-6">
                   <div className="flex justify-center mb-3">
                     <img
-                      src="/assets/images/atencion/Atencion.png"
+                      src={getTestImagePath('atencion', 'Atencion.png')}
                       alt="Ejemplos de atención"
                       className="max-w-md h-auto border rounded shadow-sm"
                       onError={(e) => {

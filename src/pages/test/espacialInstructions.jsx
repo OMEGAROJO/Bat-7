@@ -4,6 +4,7 @@ import { Card, CardHeader, CardBody, CardFooter } from '../../components/ui/Card
 import { Button } from '../../components/ui/Button';
 import { toast } from 'react-toastify';
 import espacialInstructions from './instructionsContent/espacialInstructions';
+import { getTestImagePath } from '../../utils/assetPaths';
 
 const EspacialInstructions = () => {
   const navigate = useNavigate();
@@ -115,7 +116,7 @@ const EspacialInstructions = () => {
                     <p className="text-gray-700 mb-3">En los ejercicios de esta prueba encontrarás un cubo junto con un modelo de ese mismo cubo. Fíjate en la siguiente imagen:</p>
                     <div className="flex justify-center mb-4">
                       <img
-                        src="/assets/images/espacial/Modelo Espacial.png"
+                        src={getTestImagePath('espacial', 'Modelo Espacial.png')}
                         alt="Modelo de cubo desplegado"
                         className="max-w-full h-auto border rounded shadow-sm"
                         onError={(e) => {
@@ -131,7 +132,7 @@ const EspacialInstructions = () => {
                     <h4 className="text-md font-medium mb-2 text-center">Ejemplo 1</h4>
                     <div className="flex justify-center mb-4">
                       <img
-                        src="/assets/images/espacial/E1.png"
+                        src={getTestImagePath('espacial', 'E1.png')}
                         alt="Ejemplo 1"
                         className="max-w-full h-auto border rounded shadow-sm"
                         onError={(e) => {
@@ -147,7 +148,7 @@ const EspacialInstructions = () => {
                     <h4 className="text-md font-medium mb-2 text-center">Ejemplo 2</h4>
                     <div className="flex justify-center mb-4">
                       <img
-                        src="/assets/images/espacial/E2.png"
+                        src={getTestImagePath('espacial', 'E2.png')}
                         alt="Ejemplo 2"
                         className="max-w-full h-auto border rounded shadow-sm"
                         onError={(e) => {

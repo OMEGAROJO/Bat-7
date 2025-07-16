@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Card, CardHeader, CardBody, CardFooter } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
 import { toast } from 'react-toastify';
+import { getTestImagePath } from '../../utils/assetPaths';
 
 const Espacial = () => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const Espacial = () => {
         const espacialQuestions = Array.from({ length: 28 }, (_, i) => ({
           id: i + 1,
           type: 'spatial',
-          imageUrl: `/assets/images/espacial/Espacial${i + 1}.png`,
+          imageUrl: getTestImagePath('espacial', `Espacial${i + 1}.png`),
           options: [
             { id: 'A', text: 'Opción A' },
             { id: 'B', text: 'Opción B' },
@@ -218,7 +219,7 @@ const Espacial = () => {
                   </p>
                   <div className="flex justify-center mb-3">
                     <img
-                      src="/assets/images/espacial/Modelo Espacial.png"
+                      src={getTestImagePath('espacial', 'Modelo Espacial.png')}
                       alt="Ejemplo 1"
                       className="max-w-full h-auto border rounded shadow-sm"
                       onError={(e) => {
@@ -238,7 +239,7 @@ const Espacial = () => {
                   </p>
                   <div className="flex justify-center mb-3">
                     <img
-                      src="/assets/images/espacial/Espacial1.png"
+                      src={getTestImagePath('espacial', 'Espacial1.png')}
                       alt="Ejemplo 2"
                       className="max-w-full h-auto border rounded shadow-sm"
                       onError={(e) => {

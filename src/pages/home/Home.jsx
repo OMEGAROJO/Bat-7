@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardHeader } from '../../components/ui/Card';
+import { getImagePath } from '../../utils/assetPaths';
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
               {/* Imagen de fondo con efectos */}
               <div className="absolute inset-0">
                 <img
-                  src="/assets/images/banner.png"
+                  src={getImagePath("banner.png")}
                   alt="BAT-7 Evaluación de Aptitudes"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

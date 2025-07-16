@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Card, CardHeader, CardBody, CardFooter } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
 import { toast } from 'react-toastify';
+import { getTestImagePath } from '../../utils/assetPaths';
 
 const Razonamiento = () => {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ const Razonamiento = () => {
           id: index + 1,
           type: 'series',
           // No hay texto en estas preguntas, solo imágenes
-          imagePath: `/assets/images/razonamiento/Racionamiento${index + 1}.png`,
+          imagePath: getTestImagePath('razonamiento', `Racionamiento${index + 1}.png`),
           options: [
             { id: 'a', text: 'Opción A' },
             { id: 'b', text: 'Opción B' },
