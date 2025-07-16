@@ -1,0 +1,1 @@
+import"./auth-3ab59eff.js";import{r}from"./react-vendor-99be060c.js";import"./ui-vendor-9705a4a1.js";import"./admin-168d579d.js";const o=r.createContext(),t=()=>{const t=r.useContext(o);if(!t)throw new Error("useToast debe ser usado dentro de un ToastProvider");return t};export{t as u};
