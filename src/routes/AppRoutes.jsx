@@ -103,8 +103,8 @@ const AppRoutesInternal = () => {
     <ErrorBoundary>
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
-          {/* Ruta principal - Redirige a la página de administración */}
-          <Route path="/" element={<Navigate to="/admin/administration" replace />} />
+          {/* Ruta principal - Redirige a la página de inicio */}
+          <Route path="/" element={<Navigate to="/home" replace />} />
 
           {/* Rutas públicas */}
           <Route path="/login" element={<BasicLogin />} />
@@ -129,8 +129,8 @@ const AppRoutesInternal = () => {
 
           {/* Rutas principales dentro del Layout principal */}
           <Route element={<Layout />}>
-            {/* Ruta del dashboard principal - Redirige a la página de administración */}
-            <Route path="/dashboard" element={<Navigate to="/admin/administration" replace />} />
+            {/* Ruta del dashboard principal - Redirige a la página de inicio */}
+            <Route path="/dashboard" element={<Navigate to="/home" replace />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/home" element={<Home />} />
@@ -177,7 +177,7 @@ const AppRoutesInternal = () => {
           </Route>
 
           {/* Ruta para manejar rutas no encontradas */}
-          <Route path="*" element={<Navigate to="/admin/administration" replace />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
       </Suspense>
     </ErrorBoundary>
