@@ -1,0 +1,186 @@
+/* Efectos personalizados para las páginas BAT-7 */
+
+/* Animaciones para los títulos de página */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Clases para efectos de banner */
+.banner-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.banner-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Efectos para iconos de la sidebar */
+.sidebar-icon-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-icon-hover:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 4px 8px rgba(245, 158, 11, 0.3));
+}
+
+/* Efectos para títulos de página */
+.page-header-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Efectos para partículas flotantes */
+.floating-particle {
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-particle:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.floating-particle:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.floating-particle:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.floating-particle:nth-child(5) {
+  animation-delay: 2s;
+}
+
+/* Efectos de hover para cards */
+.card-hover-effect {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Efectos para botones */
+.button-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.button-glow:hover::before {
+  left: 100%;
+}
+
+/* Efectos de gradiente animado */
+.animated-gradient {
+  background: linear-gradient(-45deg, #121940, #1e3a8a, #3b82f6, #60a5fa);
+  background-size: 400% 400%;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Efectos para iconos amarillos */
+.yellow-icon-glow {
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+  transition: all 0.3s ease-in-out;
+}
+
+.yellow-icon-glow:hover {
+  filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.8));
+  transform: scale(1.1);
+}
+
+/* Efectos de texto */
+.text-glow {
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+}
+
+.text-glow:hover {
+  text-shadow: 0 0 15px rgba(245, 158, 11, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-header-effect {
+    padding: 1rem;
+  }
+  
+  .floating-particle {
+    display: none;
+  }
+}
